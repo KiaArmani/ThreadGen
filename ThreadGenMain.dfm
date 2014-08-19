@@ -1,0 +1,272 @@
+object Form1: TForm1
+  Left = 341
+  Top = 90
+  Width = 854
+  Height = 822
+  Caption = 'ThreadGen'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 16
+    Top = 16
+    Width = 60
+    Height = 13
+    Caption = 'Plugin Name'
+  end
+  object Label2: TLabel
+    Left = 16
+    Top = 56
+    Width = 35
+    Height = 13
+    Caption = 'Version'
+  end
+  object Label3: TLabel
+    Left = 16
+    Top = 93
+    Width = 53
+    Height = 13
+    Caption = 'Description'
+  end
+  object Label4: TLabel
+    Left = 16
+    Top = 480
+    Width = 62
+    Height = 13
+    Caption = 'Thread Code'
+  end
+  object Label7: TLabel
+    Left = 752
+    Top = 16
+    Width = 65
+    Height = 13
+    Caption = 'Version 1.0.0 '
+  end
+  object Label8: TLabel
+    Left = 448
+    Top = 16
+    Width = 137
+    Height = 13
+    Caption = 'Visit my homepage! Click me!'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clHighlight
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+    OnClick = OnHomepageLabelClick
+  end
+  object Edit1: TEdit
+    Left = 16
+    Top = 32
+    Width = 417
+    Height = 21
+    TabOrder = 0
+    Text = 'Edit1'
+    OnChange = OnPluginNameChange
+  end
+  object Edit2: TEdit
+    Left = 16
+    Top = 72
+    Width = 417
+    Height = 21
+    TabOrder = 1
+    Text = 'Edit2'
+    OnChange = OnVersionChange
+  end
+  object Memo1: TMemo
+    Left = 16
+    Top = 112
+    Width = 801
+    Height = 153
+    Lines.Strings = (
+      'Memo1')
+    TabOrder = 2
+    OnChange = OnDescChange
+  end
+  object Button1: TButton
+    Left = 448
+    Top = 72
+    Width = 369
+    Height = 33
+    Caption = 'Generate Thread Code'
+    TabOrder = 3
+    OnClick = ThreadGenButton_Click
+  end
+  object Memo2: TMemo
+    Left = 16
+    Top = 496
+    Width = 801
+    Height = 265
+    Lines.Strings = (
+      'Memo2')
+    TabOrder = 4
+  end
+  object GroupBox1: TGroupBox
+    Left = 448
+    Top = 280
+    Width = 369
+    Height = 185
+    BiDiMode = bdLeftToRight
+    Caption = 'Additional'
+    ParentBiDiMode = False
+    TabOrder = 5
+    object Label5: TLabel
+      Left = 8
+      Top = 16
+      Width = 65
+      Height = 13
+      Caption = 'Requirements'
+    end
+    object Label6: TLabel
+      Left = 328
+      Top = 16
+      Width = 32
+      Height = 13
+      Caption = 'Credits'
+    end
+    object Label9: TLabel
+      Left = 144
+      Top = 16
+      Width = 86
+      Height = 13
+      Caption = 'One entry per line!'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clRed
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Memo3: TMemo
+      Left = 8
+      Top = 32
+      Width = 169
+      Height = 145
+      Lines.Strings = (
+        'Memo3')
+      TabOrder = 0
+    end
+    object Memo4: TMemo
+      Left = 192
+      Top = 32
+      Width = 169
+      Height = 145
+      Lines.Strings = (
+        'Memo4')
+      TabOrder = 1
+    end
+  end
+  object Button2: TButton
+    Left = 448
+    Top = 32
+    Width = 177
+    Height = 33
+    Caption = 'Load Project'
+    TabOrder = 6
+    OnClick = OnLoadClick
+  end
+  object Button3: TButton
+    Left = 640
+    Top = 32
+    Width = 177
+    Height = 33
+    Caption = 'Save Project'
+    TabOrder = 7
+    OnClick = OnSaveClick
+  end
+  object GroupBox2: TGroupBox
+    Left = 16
+    Top = 280
+    Width = 417
+    Height = 185
+    Caption = 'Changelog'
+    TabOrder = 8
+    object Label10: TLabel
+      Left = 8
+      Top = 16
+      Width = 70
+      Height = 13
+      Caption = 'Version History'
+    end
+    object Label11: TLabel
+      Left = 128
+      Top = 16
+      Width = 35
+      Height = 13
+      Caption = 'Version'
+    end
+    object Label12: TLabel
+      Left = 256
+      Top = 16
+      Width = 150
+      Height = 13
+      Caption = 'Changelog Entries (one per line)'
+    end
+    object ListBox1: TListBox
+      Left = 8
+      Top = 32
+      Width = 113
+      Height = 145
+      ItemHeight = 13
+      TabOrder = 0
+      OnClick = OnListBoxClick
+    end
+    object Button4: TButton
+      Left = 128
+      Top = 64
+      Width = 121
+      Height = 25
+      Caption = 'Add Changelog'
+      TabOrder = 1
+      OnClick = OnChangelogAddClick
+    end
+    object Button5: TButton
+      Left = 128
+      Top = 96
+      Width = 121
+      Height = 25
+      Caption = 'Remove Changelog'
+      TabOrder = 2
+      OnClick = OnRemoveChangelogClick
+    end
+    object Memo5: TMemo
+      Left = 256
+      Top = 32
+      Width = 153
+      Height = 145
+      Lines.Strings = (
+        'Memo5')
+      TabOrder = 3
+      OnChange = OnChangelogTextChange
+    end
+    object Edit3: TEdit
+      Left = 128
+      Top = 32
+      Width = 121
+      Height = 25
+      TabOrder = 4
+      Text = 'Edit3'
+      OnChange = OnChangelogVersionChange
+    end
+    object Button6: TButton
+      Left = 128
+      Top = 128
+      Width = 121
+      Height = 25
+      Caption = 'Modify Changelog'
+      TabOrder = 5
+      OnClick = OnModifyChangelogClick
+    end
+  end
+end
