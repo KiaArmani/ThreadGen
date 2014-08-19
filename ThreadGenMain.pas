@@ -4,7 +4,6 @@ unit ThreadGenMain;
 // 	
 // =============================================================================
 
-
 interface
 
 uses
@@ -115,7 +114,7 @@ begin
   DecodeDate(Date, wYear, wMonth, wDay);
 
   Memo2.Text :=
-  '[FONT="Trebuchet MS"][SIZE="6"][color="#b5762d"]' + PluginName + '[/color][/SIZE][/FONT]'
+  '[INDENT][FONT="Trebuchet MS"][SIZE="6"][color="#b5762d"]' + PluginName + '[/color][/SIZE][/FONT]'
   + ^M + ^J
   +'[SIZE="1"][color=#4C4C4C]v'
   + PluginVersion
@@ -206,6 +205,8 @@ begin
        Memo2.Text := Memo2.Text + '[/LIST]' + ^M + ^J + '[/QUOTE]' + ^M + ^J;
     end;
   end;
+
+  Memo2.Text := Memo2.Text + '[/INDENT]';
 end;
 
 // =============================================================================
@@ -340,6 +341,17 @@ begin
 
   if FileDialog.Execute then
   begin
+
+    Edit1.Text := 'Your Plugin Name';
+    Edit2.Text := '1.0.0';
+    Edit3.Text := '';
+
+    Memo1.Text := '';
+    Memo2.Text := '';
+    Memo3.Text := '';
+    Memo4.Text := '';
+    Memo5.Text := '';
+
     ProjFile := TIniFile.Create(FileDialog.FileName);
     try
        Edit1.Text := ProjFile.ReadString('ThreadGen', 'PluginName', Edit1.Text);
@@ -438,7 +450,7 @@ end;
 
 procedure TForm1.OnRemoveChangelogClick(Sender: TObject);
 begin
- //
+//
 end;
 
 // =============================================================================

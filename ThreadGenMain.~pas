@@ -4,7 +4,6 @@ unit ThreadGenMain;
 // 	
 // =============================================================================
 
-
 interface
 
 uses
@@ -115,7 +114,7 @@ begin
   DecodeDate(Date, wYear, wMonth, wDay);
 
   Memo2.Text :=
-  '[FONT="Trebuchet MS"][SIZE="6"][color="#b5762d"]' + PluginName + '[/color][/SIZE][/FONT]'
+  '[INDENT][FONT="Trebuchet MS"][SIZE="6"][color="#b5762d"]' + PluginName + '[/color][/SIZE][/FONT]'
   + ^M + ^J
   +'[SIZE="1"][color=#4C4C4C]v'
   + PluginVersion
@@ -206,6 +205,8 @@ begin
        Memo2.Text := Memo2.Text + '[/LIST]' + ^M + ^J + '[/QUOTE]' + ^M + ^J;
     end;
   end;
+
+  Memo2.Text := Memo2.Text + '[/INDENT]';
 end;
 
 // =============================================================================
@@ -438,7 +439,7 @@ end;
 
 procedure TForm1.OnRemoveChangelogClick(Sender: TObject);
 begin
- //
+//
 end;
 
 // =============================================================================

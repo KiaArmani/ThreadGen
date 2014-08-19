@@ -1,8 +1,8 @@
 object Form1: TForm1
-  Left = 334
-  Top = 129
-  Width = 854
-  Height = 822
+  Left = 282
+  Top = 113
+  Width = 849
+  Height = 817
   Caption = 'ThreadGen'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
