@@ -1,9 +1,9 @@
 object Form1: TForm1
-  Left = 282
-  Top = 113
-  Width = 849
+  Left = 418
+  Top = 144
+  Width = 850
   Height = 817
-  Caption = 'ThreadGen'
+  Caption = 'ThreadGen by Kia'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

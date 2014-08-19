@@ -78,8 +78,6 @@ var
   PluginVersion : String;
   PluginDesc : String;
 
-  SelectedVersion : String;
-
   ProjFile : TIniFile;
   iL : Integer;
   i : Integer;
@@ -272,7 +270,6 @@ var
   ProjFile : TIniFile;
   i : Integer;
   iL : Integer;
-  TempString : String;
 begin
   FileDialog := TSaveDialog.Create(self);
   FileDialog.Title := 'Save your Project';
@@ -331,8 +328,6 @@ var
 
   i : Integer;
   iL : Integer;
-
-  ChangelogList : TStringList;
 begin
   FileDialog := TOpenDialog.Create(self);
   FileDialog.InitialDir := GetCurrentDir;
@@ -378,9 +373,7 @@ begin
            Memo4.Lines.Insert(i, ProjFile.ReadString('ThreadGen', 'PluginCred' + IntToStr(i), ''));
        end;
 
-       ChangelogList := TStringList.Create;
        ProjFile.ReadSection('Changelogs', ListBox1.Items);
-
        GlobalFileName := FileDialog.FileName;
 
     finally
