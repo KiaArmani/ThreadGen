@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 341
-  Top = 90
+  Left = 334
+  Top = 102
   Width = 854
   Height = 822
   Caption = 'ThreadGen'
@@ -46,12 +46,11 @@ object Form1: TForm1
   object Label7: TLabel
     Left = 752
     Top = 16
-    Width = 65
+    Width = 3
     Height = 13
-    Caption = 'Version 1.0.0 '
   end
   object Label8: TLabel
-    Left = 448
+    Left = 680
     Top = 16
     Width = 137
     Height = 13
@@ -254,7 +253,7 @@ object Form1: TForm1
       Left = 128
       Top = 32
       Width = 121
-      Height = 25
+      Height = 21
       TabOrder = 4
       Text = 'Edit3'
       OnChange = OnChangelogVersionChange
