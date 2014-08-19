@@ -1,0 +1,21 @@
+[ThreadGen]
+PluginName=Cops & Runners
+PluginVersion=1.0.0
+PluginDesc0=In this Mod, a certain percentage of players become Cops, and the remaining players become Runners.    
+PluginDesc1=One player becomes the Warden, who has to decide where to put jail.    
+PluginDesc2=A certain amount of Runners get armed with Smoke Grenade Spawnpoints that spawn smoke grenades for their entire team!
+PluginDesc3=The Cops have to catch and tag all free Runners with their Knife to jail them!    
+PluginDesc4=Runners have to escape and survive for the time limit!
+PluginDesc5=They can free their jailed teammates by slashing them with their fists.
+PluginReq0=AMXX 1.8.3-dev Build 41XX+
+PluginReq1=
+PluginReq2=
+PluginReq3=
+PluginReq4=
+PluginReq5=
+PluginCred0=Xalus - For explaining and making   
+PluginCred1=the Dimension / Jail Code.
+[ReadInfo]
+PluginDesc=6
+PluginReq=6
+PluginCred=2
