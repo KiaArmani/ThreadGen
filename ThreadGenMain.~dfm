@@ -106,8 +106,10 @@ object Form1: TForm1
     Height = 153
     Lines.Strings = (
       'Memo1')
+    ScrollBars = ssVertical
     TabOrder = 2
     OnChange = OnDescChange
+    OnKeyDown = OnDescKeyDown
   end
   object Button1: TButton
     Left = 448
@@ -125,7 +127,9 @@ object Form1: TForm1
     Height = 265
     Lines.Strings = (
       'Memo2')
+    ScrollBars = ssVertical
     TabOrder = 4
+    OnKeyDown = OnThreadKeyDown
   end
   object GroupBox1: TGroupBox
     Left = 448
@@ -170,6 +174,7 @@ object Form1: TForm1
       Height = 145
       Lines.Strings = (
         'Memo3')
+      ScrollBars = ssVertical
       TabOrder = 0
     end
     object Memo4: TMemo
@@ -179,6 +184,7 @@ object Form1: TForm1
       Height = 145
       Lines.Strings = (
         'Memo4')
+      ScrollBars = ssVertical
       TabOrder = 1
     end
   end
@@ -263,6 +269,7 @@ object Form1: TForm1
       Height = 145
       Lines.Strings = (
         'Memo5')
+      ScrollBars = ssVertical
       TabOrder = 3
       OnChange = OnChangelogTextChange
     end

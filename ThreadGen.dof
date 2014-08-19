@@ -44,7 +44,7 @@ UnitOutputDir=
 PackageDLLOutputDir=
 PackageDCPOutputDir=
 SearchPath=
-Packages=
+Packages=Vcl50;Vclx50;VclSmp50;Vcldb50;vclado50;ibevnt50;Vclbde50;vcldbx50;Qrpt50;TeeUI50;TeeDB50;Tee50;Dss50;TeeQR50;VCLIB50;Vclmid50;vclie50;Inetdb50;Inet50;NMFast50;webmid50;dclocx50;dclaxserver50
 Conditionals=
 DebugSourceDirs=
 UsePackages=0
@@ -56,12 +56,12 @@ ActiveLang=
 ProjectLang=$00000407
 RootDir=
 [Version Info]
-IncludeVerInfo=0
-AutoIncBuild=0
+IncludeVerInfo=1
+AutoIncBuild=1
 MajorVer=1
 MinorVer=0
 Release=0
-Build=0
+Build=2
 Debug=0
 PreRelease=0
 Special=0
@@ -70,13 +70,16 @@ DLL=0
 Locale=1031
 CodePage=1252
 [Version Info Keys]
-CompanyName=
+CompanyName=Kia Armani
 FileDescription=
-FileVersion=1.0.0.0
-InternalName=
-LegalCopyright=
+FileVersion=1.0.0.2
+InternalName=ThreadGen
+LegalCopyright=Copyright (c) 2014, by Kia Armani
 LegalTrademarks=
-OriginalFilename=
-ProductName=
+OriginalFilename=ThreadGen
+ProductName=ThreadGen
 ProductVersion=1.0.0.0
 Comments=
+[HistoryLists\hlUnitAliases]
+Count=1
+Item0=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;

@@ -58,6 +58,10 @@ type
     procedure OnChangelogTextChange(Sender: TObject);
     procedure OnListBoxClick(Sender: TObject);
     procedure Label13Click(Sender: TObject);
+    procedure OnDescKeyDown(Sender: TObject; var Key: Word;
+      Shift: TShiftState);
+    procedure OnThreadKeyDown(Sender: TObject; var Key: Word;
+      Shift: TShiftState);
   private
     GlobalFileName : String;
   public
@@ -507,6 +511,26 @@ end;
 procedure TForm1.Label13Click(Sender: TObject);
 begin
   ShellExecute(Handle, 'open', 'https://github.com/kiapwnz/ThreadGen', nil, nil, SW_SHOW);
+end;
+
+procedure TForm1.OnDescKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+  if (Key = Ord('A')) and (ssCtrl in Shift) then
+   begin
+     TMemo(Sender).SelectAll;
+     Key := 0;
+   end;
+end;
+
+procedure TForm1.OnThreadKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+ if (Key = Ord('A')) and (ssCtrl in Shift) then
+   begin
+     TMemo(Sender).SelectAll;
+     Key := 0;
+   end;
 end;
 
 end.

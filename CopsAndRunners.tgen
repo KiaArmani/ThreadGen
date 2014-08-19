@@ -14,3 +14,7 @@ PluginCred1=the Dimension / Jail Code.
 PluginDesc=6
 PluginReq=1
 PluginCred=2
+[Changelogs]
+1.0.1=1
+[1.0.1]
+ChangeLine0=Fixed Bug #2
