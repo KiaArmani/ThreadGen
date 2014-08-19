@@ -65,6 +65,22 @@ object Form1: TForm1
     ParentFont = False
     OnClick = OnHomepageLabelClick
   end
+  object Label13: TLabel
+    Left = 448
+    Top = 16
+    Width = 105
+    Height = 13
+    Caption = 'ThreadGen on GitHub'
+    Color = clMenu
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clTeal
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label13Click
+  end
   object Edit1: TEdit
     Left = 16
     Top = 32

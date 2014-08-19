@@ -41,6 +41,7 @@ type
     Label11: TLabel;
     Label12: TLabel;
     Button6: TButton;
+    Label13: TLabel;
 
     procedure ThreadGenButton_Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -56,6 +57,7 @@ type
     procedure OnChangelogVersionChange(Sender: TObject);
     procedure OnChangelogTextChange(Sender: TObject);
     procedure OnListBoxClick(Sender: TObject);
+    procedure Label13Click(Sender: TObject);
   private
     GlobalFileName : String;
   public
@@ -500,6 +502,11 @@ begin
     for i := 0 to iL - 1 do
       Memo5.Lines.Insert(i, ProjFile.ReadString(SelectedVersion, 'ChangeLine' + IntToStr(i), ''));
   end;
+end;
+
+procedure TForm1.Label13Click(Sender: TObject);
+begin
+  ShellExecute(Handle, 'open', 'https://github.com/kiapwnz/ThreadGen', nil, nil, SW_SHOW);
 end;
 
 end.

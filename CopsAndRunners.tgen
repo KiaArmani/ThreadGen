@@ -8,14 +8,9 @@ PluginDesc3=The Cops have to catch and tag all free Runners with their Knife to 
 PluginDesc4=Runners have to escape and survive for the time limit!
 PluginDesc5=They can free their jailed teammates by slashing them with their fists.
 PluginReq0=AMXX 1.8.3-dev Build 41XX+
-PluginReq1=
-PluginReq2=
-PluginReq3=
-PluginReq4=
-PluginReq5=
 PluginCred0=Xalus - For explaining and making   
 PluginCred1=the Dimension / Jail Code.
 [ReadInfo]
 PluginDesc=6
-PluginReq=6
+PluginReq=1
 PluginCred=2
