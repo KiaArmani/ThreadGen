@@ -1,6 +1,6 @@
 object Form1: TForm1
   Left = 334
-  Top = 102
+  Top = 129
   Width = 854
   Height = 822
   Caption = 'ThreadGen'
@@ -236,6 +236,7 @@ object Form1: TForm1
       Width = 121
       Height = 25
       Caption = 'Remove Changelog'
+      Enabled = False
       TabOrder = 2
       OnClick = OnRemoveChangelogClick
     end
@@ -264,6 +265,7 @@ object Form1: TForm1
       Width = 121
       Height = 25
       Caption = 'Modify Changelog'
+      Enabled = False
       TabOrder = 5
       OnClick = OnModifyChangelogClick
     end
