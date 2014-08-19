@@ -341,6 +341,17 @@ begin
 
   if FileDialog.Execute then
   begin
+
+    Edit1.Text := 'Your Plugin Name';
+    Edit2.Text := '1.0.0';
+    Edit3.Text := '';
+
+    Memo1.Text := '';
+    Memo2.Text := '';
+    Memo3.Text := '';
+    Memo4.Text := '';
+    Memo5.Text := '';
+
     ProjFile := TIniFile.Create(FileDialog.FileName);
     try
        Edit1.Text := ProjFile.ReadString('ThreadGen', 'PluginName', Edit1.Text);
