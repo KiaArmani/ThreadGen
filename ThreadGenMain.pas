@@ -402,7 +402,7 @@ begin
 end;
 
 // =============================================================================
-// 	
+//
 // =============================================================================
 
 procedure TForm1.OnChangelogAddClick(Sender: TObject);
@@ -450,8 +450,28 @@ end;
 // =============================================================================
 
 procedure TForm1.OnRemoveChangelogClick(Sender: TObject);
+var
+  SelectedVersion : String;
+  ProjFile : TIniFile;
 begin
-//
+  SelectedVersion := ListBox1.Items.Strings[ListBox1.ItemIndex];
+  if SelectedVersion = '' then
+  begin
+    MessageDlg('You need to select a changelog to delete it.', mtError, [mbOk], 1);
+    Exit;
+  end;
+
+  if GlobalFileName = '' then
+    OnSaveClick(self)
+  else begin
+    ProjFile := TIniFile.Create(GlobalFileName);
+    ProjFile.DeleteKey('Changelogs', SelectedVersion);
+    ProjFile.EraseSection(SelectedVersion);
+    ListBox1.Items.Delete(ListBox1.ItemIndex);
+    Memo5.Text := '';
+  end;
+
+
 end;
 
 // =============================================================================
