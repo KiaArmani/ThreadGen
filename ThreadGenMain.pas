@@ -187,7 +187,7 @@ begin
     for i := 0 to ListBox1.Items.Count - 1 do
     begin
       Memo2.Text := Memo2.Text
-      + '[QUOTE='
+      + '[QUOTE=Version '
       + ListBox1.Items.Strings[i]
       + ']'
       + ^M + ^J
