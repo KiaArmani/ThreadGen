@@ -1,8 +1,8 @@
 object Form1: TForm1
   Left = 363
-  Top = 152
+  Top = 95
   Width = 849
-  Height = 817
+  Height = 874
   Caption = 'ThreadGen by Kia'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -38,7 +38,7 @@ object Form1: TForm1
   end
   object Label4: TLabel
     Left = 16
-    Top = 480
+    Top = 528
     Width = 62
     Height = 13
     Caption = 'Thread Code'
@@ -122,7 +122,7 @@ object Form1: TForm1
   end
   object Memo2: TMemo
     Left = 16
-    Top = 496
+    Top = 552
     Width = 801
     Height = 265
     Lines.Strings = (
@@ -135,7 +135,7 @@ object Form1: TForm1
     Left = 448
     Top = 280
     Width = 369
-    Height = 185
+    Height = 233
     BiDiMode = bdLeftToRight
     Caption = 'Additional'
     ParentBiDiMode = False
@@ -148,8 +148,8 @@ object Form1: TForm1
       Caption = 'Requirements'
     end
     object Label6: TLabel
-      Left = 328
-      Top = 16
+      Left = 8
+      Top = 104
       Width = 32
       Height = 13
       Caption = 'Credits'
@@ -170,21 +170,21 @@ object Form1: TForm1
     object Memo3: TMemo
       Left = 8
       Top = 32
-      Width = 169
-      Height = 145
+      Width = 353
+      Height = 65
       Lines.Strings = (
         'Memo3')
-      ScrollBars = ssBoth
+      ScrollBars = ssVertical
       TabOrder = 0
     end
     object Memo4: TMemo
-      Left = 192
-      Top = 32
-      Width = 169
-      Height = 145
+      Left = 8
+      Top = 120
+      Width = 353
+      Height = 105
       Lines.Strings = (
         'Memo4')
-      ScrollBars = ssBoth
+      ScrollBars = ssVertical
       TabOrder = 1
       WordWrap = False
     end
@@ -211,42 +211,42 @@ object Form1: TForm1
     Left = 16
     Top = 280
     Width = 417
-    Height = 185
+    Height = 233
     Caption = 'Changelog'
     TabOrder = 8
     object Label10: TLabel
-      Left = 8
+      Left = 136
       Top = 16
       Width = 70
       Height = 13
       Caption = 'Version History'
     end
     object Label11: TLabel
-      Left = 128
+      Left = 8
       Top = 16
       Width = 35
       Height = 13
       Caption = 'Version'
     end
     object Label12: TLabel
-      Left = 256
-      Top = 16
+      Left = 136
+      Top = 104
       Width = 150
       Height = 13
       Caption = 'Changelog Entries (one per line)'
     end
     object ListBox1: TListBox
-      Left = 8
+      Left = 136
       Top = 32
-      Width = 113
-      Height = 145
+      Width = 265
+      Height = 65
       ItemHeight = 13
       TabOrder = 0
       OnClick = OnListBoxClick
     end
     object Button4: TButton
-      Left = 128
-      Top = 64
+      Left = 8
+      Top = 56
       Width = 121
       Height = 25
       Caption = 'Add Changelog'
@@ -254,28 +254,27 @@ object Form1: TForm1
       OnClick = OnChangelogAddClick
     end
     object Button5: TButton
-      Left = 128
-      Top = 96
+      Left = 8
+      Top = 88
       Width = 121
       Height = 25
       Caption = 'Remove Changelog'
-      Enabled = False
       TabOrder = 2
       OnClick = OnRemoveChangelogClick
     end
     object Memo5: TMemo
-      Left = 256
-      Top = 32
-      Width = 153
-      Height = 145
+      Left = 136
+      Top = 120
+      Width = 265
+      Height = 105
       Lines.Strings = (
         'Memo5')
-      ScrollBars = ssBoth
+      ScrollBars = ssVertical
       TabOrder = 3
       OnChange = OnChangelogTextChange
     end
     object Edit3: TEdit
-      Left = 128
+      Left = 8
       Top = 32
       Width = 121
       Height = 21
@@ -284,8 +283,8 @@ object Form1: TForm1
       OnChange = OnChangelogVersionChange
     end
     object Button6: TButton
-      Left = 128
-      Top = 128
+      Left = 8
+      Top = 120
       Width = 121
       Height = 25
       Caption = 'Modify Changelog'
@@ -300,6 +299,8 @@ object Form1: TForm1
     Width = 177
     Height = 33
     Caption = 'Open New Thread'
+    ParentShowHint = False
+    ShowHint = True
     TabOrder = 9
     OnClick = OnThreadOpenClick
   end
