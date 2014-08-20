@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 418
-  Top = 144
-  Width = 850
+  Left = 363
+  Top = 152
+  Width = 849
   Height = 817
   Caption = 'ThreadGen by Kia'
   Color = clBtnFace
@@ -114,7 +114,7 @@ object Form1: TForm1
   object Button1: TButton
     Left = 448
     Top = 72
-    Width = 369
+    Width = 177
     Height = 33
     Caption = 'Generate Thread Code'
     TabOrder = 3
@@ -293,5 +293,14 @@ object Form1: TForm1
       TabOrder = 5
       OnClick = OnModifyChangelogClick
     end
+  end
+  object Button7: TButton
+    Left = 640
+    Top = 72
+    Width = 177
+    Height = 33
+    Caption = 'Open New Thread'
+    TabOrder = 9
+    OnClick = OnThreadOpenClick
   end
 end

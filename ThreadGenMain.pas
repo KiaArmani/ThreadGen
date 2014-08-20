@@ -42,6 +42,7 @@ type
     Label12: TLabel;
     Button6: TButton;
     Label13: TLabel;
+    Button7: TButton;
 
     procedure ThreadGenButton_Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -62,6 +63,7 @@ type
       Shift: TShiftState);
     procedure OnThreadKeyDown(Sender: TObject; var Key: Word;
       Shift: TShiftState);
+    procedure OnThreadOpenClick(Sender: TObject);
   private
     GlobalFileName : String;
   public
@@ -531,6 +533,11 @@ begin
      TMemo(Sender).SelectAll;
      Key := 0;
    end;
+end;
+
+procedure TForm1.OnThreadOpenClick(Sender: TObject);
+begin
+  ShellExecute(Handle, 'open', 'https://forums.alliedmods.net/newthread.php?do=newthread&f=26', nil, nil, SW_SHOW);
 end;
 
 end.
