@@ -122,9 +122,9 @@ object Form1: TForm1
   end
   object Memo2: TMemo
     Left = 16
-    Top = 552
+    Top = 544
     Width = 801
-    Height = 265
+    Height = 273
     Lines.Strings = (
       'Memo2')
     ScrollBars = ssBoth
