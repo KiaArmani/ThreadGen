@@ -1,8 +1,8 @@
 object Form1: TForm1
-  Left = 363
-  Top = 95
+  Left = 360
+  Top = 94
   Width = 849
-  Height = 874
+  Height = 872
   Caption = 'ThreadGen by Kia'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -154,19 +154,6 @@ object Form1: TForm1
       Height = 13
       Caption = 'Credits'
     end
-    object Label9: TLabel
-      Left = 144
-      Top = 16
-      Width = 86
-      Height = 13
-      Caption = 'One entry per line!'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clRed
-      Font.Height = -11
-      Font.Name = 'MS Sans Serif'
-      Font.Style = []
-      ParentFont = False
-    end
     object Memo3: TMemo
       Left = 8
       Top = 32
@@ -217,9 +204,9 @@ object Form1: TForm1
     object Label10: TLabel
       Left = 136
       Top = 16
-      Width = 70
+      Width = 86
       Height = 13
-      Caption = 'Version History'
+      Caption = 'Changelog History'
     end
     object Label11: TLabel
       Left = 8
@@ -231,9 +218,9 @@ object Form1: TForm1
     object Label12: TLabel
       Left = 136
       Top = 104
-      Width = 150
+      Width = 86
       Height = 13
-      Caption = 'Changelog Entries (one per line)'
+      Caption = 'Changelog Entries'
     end
     object ListBox1: TListBox
       Left = 136

@@ -30,7 +30,6 @@ type
     Button3: TButton;
     Label7: TLabel;
     Label8: TLabel;
-    Label9: TLabel;
     GroupBox2: TGroupBox;
     ListBox1: TListBox;
     Button4: TButton;
