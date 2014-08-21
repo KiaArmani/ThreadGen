@@ -14,3 +14,6 @@ PluginDesc=6
 PluginReq=1
 PluginCred=1
 [Changelogs]
+1.0.1=1
+[1.0.1]
+ChangeLine0=Added Bug Fix.

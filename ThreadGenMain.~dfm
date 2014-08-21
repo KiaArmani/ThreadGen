@@ -275,7 +275,6 @@ object Form1: TForm1
       Width = 121
       Height = 25
       Caption = 'Modify Changelog'
-      Enabled = False
       TabOrder = 5
       OnClick = OnModifyChangelogClick
     end

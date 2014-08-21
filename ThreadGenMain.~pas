@@ -319,8 +319,6 @@ begin
     end;
     GlobalFileName := FileDialog.FileName;
   end
-  else
-    MessageDlg('You need to select a valid file!', mtError, [mbOK], 1);
 
 end;
 
@@ -387,8 +385,6 @@ begin
      ProjFile.Free;
     end;
   end
-  else
-    MessageDlg('You need to select a valid file!', mtError, [mbOK], 1);
 end;
 
 // =============================================================================
@@ -478,8 +474,32 @@ end;
 // =============================================================================
 
 procedure TForm1.OnModifyChangelogClick(Sender: TObject);
+var
+  SelectedVersion : String;
+  ProjFile : TIniFile;
+
+  iL : Integer;
+  i : Integer;
 begin
-//
+  SelectedVersion := ListBox1.Items.Strings[ListBox1.ItemIndex];
+  if SelectedVersion = '' then
+  begin
+    MessageDlg('You need to select a changelog to modify it.', mtError, [mbOk], 1);
+    Exit;
+  end;
+
+  if GlobalFileName = '' then
+    OnSaveClick(self)
+  else begin
+    ProjFile := TIniFile.Create(GlobalFileName);
+    ProjFile.EraseSection(SelectedVersion);
+
+    iL := Memo5.Lines.Count;
+    ProjFile.WriteInteger('Changelogs', SelectedVersion, iL);
+
+    for i := 0 to iL - 1 do
+      ProjFile.WriteString(SelectedVersion, 'ChangeLine' + IntToStr(i), Memo5.Lines[i]);
+  end;
 end;
 
 // =============================================================================
