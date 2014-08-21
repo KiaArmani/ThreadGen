@@ -61,7 +61,7 @@ AutoIncBuild=1
 MajorVer=1
 MinorVer=0
 Release=0
-Build=2
+Build=3
 Debug=0
 PreRelease=0
 Special=0
@@ -72,7 +72,7 @@ CodePage=1252
 [Version Info Keys]
 CompanyName=Kia Armani
 FileDescription=
-FileVersion=1.0.0.2
+FileVersion=1.0.0.3
 InternalName=ThreadGen
 LegalCopyright=Copyright (c) 2014, by Kia Armani
 LegalTrademarks=
